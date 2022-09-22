@@ -17,7 +17,7 @@
 
              <!---hamburger--->
         
-            <div class="">
+            <div>
                 <button id="menu-btn" class="block hamburger md:hidden focus:outline-none" (click)="hidden = !hidden" [class.open]="hidden">
                     <span class="hamburger-top"></span>
                     <span class="hamburger-middle"></span>
@@ -38,7 +38,7 @@
 
 <!---mobile menu-->
 <div class="md:hidden w-full">
-    <div [class.hidden]="!hidden" id="menu" class="absolute w-4/5 text-center  mt-5 space-y-6 font-bold z-30 text-[rgb(204,167,114)] bg-white drop-shadow-md">
+    <div [class.hidden]="!hidden" id="menu" class="absolute w-4/5 text-center  mt-5 space-y-6 font-bold z-30 text-[rgb(204,167,114)] bg-white rounded drop-shadow-md">
         <a routerLink="/" class="hover:text-gray-300 block">Home</a>
         <a routerLink="/about" class="hover:text-gray-300 block">About</a>
         <a routerLink="/properties" class="hover:text-gray-300 block">Properties</a>
