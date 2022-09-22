@@ -1,1 +1,126 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn-m{
+    margin-left:-1rem;
+
+}
+.bg-img{
+    background-image:linear-gradient(rgb(0,0,0,0.7),rgb(0,0,0,0.7)),url("assets/img/estate.jpg");
+    min-height: 80vh;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center
+}
+.pstn{
+    top:40%;
+    transform: translate(-50% -50%)
+}
+.mgn{
+    margin-top:-2rem;
+
+    
+}
+.explore1{
+    background-image:url("assets/img/explore1.webp");
+    background-size:cover;
+    background-repeat:no-repeat;
+    min-height:80vh;
+    background-position:top;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 85%);
+    
+}
+.explore2{
+    background-image:url("assets/img/explore2.webp");
+    background-size:cover;
+    background-repeat:no-repeat;
+    min-height:80vh;
+    background-position:top;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 85%);
+    
+}
+.explore3{
+    background-image:url("assets/img/explore3.webp");
+    background-size:cover;
+    background-repeat:no-repeat;
+    min-height:80vh;
+    background-position:top;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 85%);
+    
+}
+.bg-img2{
+    background-image:linear-gradient(rgb(0,0,0,0.7),rgb(0,0,0,0.7)),url("assets/img/about.jpg");
+    min-height: 80vh;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center
+}
+
+.hamburger{
+    cursor: pointer;
+    width: 24px;
+    height: 2px;
+    transition: all 0.25s;
+    position: relative;
+}
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom{
+    position: absolute;
+    top:0;
+    left:0;
+    width:24px;
+    height: 3px;
+    background:#000;
+    transform:rotate(0);
+    transition:all 0.5s;
+    
+}
+
+.hamburger-middle{
+    transform: translateY(7px);
+
+}
+.hamburger-bottom{
+    transform: translateY(14px);
+}
+.open{
+    transform:rotate(90deg);
+    transform: translateY(0px);
+}
+.open .hamburger-top{
+    transform:rotate(45deg) translateY(6px) translate(6px);
+}
+.open .hamburger-middle{
+    display:none;
+}
+.open .hamburger-bottom{
+    transform:rotate(-45deg) translateY(6px) translate(-6px);
+}
+
+.bg-blog{
+    background-image:url('assets/img/xcat.webp');
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    min-height:40vh;
+
+}
+.bg-blog2{
+    background-image:url('assets/img/xcat2.webp');
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    min-height:40vh;
+
+}
+.bg-blog3{
+    background-image:url('assets/img/xcat3.webp');
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    min-height:40vh;
+
+}

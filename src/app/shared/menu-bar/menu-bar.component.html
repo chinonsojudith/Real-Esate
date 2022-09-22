@@ -1,0 +1,53 @@
+<div class="bg-white p-2.5 relative sticky  top-0 z-30">
+
+    <nav class="container mx-auto">
+        <div class="flex justify-between items-center ">
+            <div>
+                <img src="assets/img/download.webp" class="md:w-full  w-3/5">
+            </div>
+            <div class="md:space-x-6 hidden md:block">
+                <a routerLink="/" routerLinkActive="text-[rgb(204,167,114)] font-bold " [routerLinkActiveOptions]="{exact:true}" class="hover:text-[rgb(204,167,114)]">Home</a>
+                <a routerLink="/about" routerLinkActive="text-[rgb(204,167,114)] font-bold " class="hover:text-[rgb(204,167,114)]">About</a>
+                <a routerLink="/properties" routerLinkActive="text-[rgb(204,167,114)] font-bold " class="hover:text-[rgb(204,167,114)]">Properties</a>
+                <a routerLink="/gallery" routerLinkActive="text-[rgb(204,167,114)] font-bold " class="hover:text-[rgb(204,167,114)]">Gallery</a>
+                <a routerLink="/blog" routerLinkActive="text-[rgb(204,167,114)] font-bold " class="hover:text-[rgb(204,167,114)]">Blog</a>
+                <a routerLink="/contact" routerLinkActive="text-[rgb(204,167,114)] font-bold " class="hover:text-[rgb(204,167,114)]">Contact</a>
+    
+            </div>
+
+             <!---hamburger--->
+        
+            <div class="">
+                <button id="menu-btn" class="block hamburger md:hidden focus:outline-none" (click)="hidden = !hidden" [class.open]="hidden">
+                    <span class="hamburger-top"></span>
+                    <span class="hamburger-middle"></span>
+                    <span class="hamburger-bottom"></span>
+        
+                </button>
+             </div>
+            
+        </div>
+        <div>
+            
+            
+        </div>
+
+
+        
+         
+
+<!---mobile menu-->
+<div class="md:hidden w-full">
+    <div [class.hidden]="!hidden" id="menu" class="absolute w-4/5 text-center  mt-5 space-y-6 font-bold z-30 text-[rgb(204,167,114)] bg-white drop-shadow-md">
+        <a routerLink="/" class="hover:text-gray-300 block">Home</a>
+        <a routerLink="/about" class="hover:text-gray-300 block">About</a>
+        <a routerLink="/properties" class="hover:text-gray-300 block">Properties</a>
+        <a routerLink="/gallery" class="hover:text-gray-300 block">Gallery</a>
+        <a routerLink="/blog" class="hover:text-gray-300 block">Blog</a>
+        <a routerLink="/contact" class="hover:text-gray-300 block">Contact</a>
+
+    </div>
+</div>
+    </nav>
+    
+</div>

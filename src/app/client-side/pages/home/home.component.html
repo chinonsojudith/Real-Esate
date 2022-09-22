@@ -1,0 +1,343 @@
+<div class="bg-img relative">
+  <div class="">
+    <div class="text-center  absolute text-white w-full pstn">
+      <h5 class="md:text-xl text-xs leading-normal ">SEE WHAT A DIFFERENCE A STAY MAKES</h5>
+      <h1 class="md:text-7xl font-bold text-2xl leading-normal mb-6">LUXURY IS PERSONAL</h1>
+      
+      <a href="home#form" class="bg-transparent hover:bg-[rgb(204,167,114)] text-white md:font-bold font-semibold px-4 mt-6 leading-normal hover:text-white py-2 md:px-8 border-2 border-[rgb(204,167,114)] hover:border-transparent rounded">Book Now</a>
+    </div>
+  </div>
+</div>
+
+<div   id="form" class="bg-white shadow-xl relative top-0 mgn md:mb-5 md:p-10 md:w-full container mx-auto">
+  <form [formGroup]="bookingForm" (ngSubmit)="onSubmit()">
+    <div class="py-3 px-3 flex flex-col md:flex-row md:space-x-6  w-full md:justify-between">
+      <div class="w-full md:w-2/4">
+        
+         <input type="text" placeholder="Enter email" class="input input-bordered placeholder:text-black  text-gray-700 border w-full rounded py-3 px-3 mb-3 leading-normal focus:outline-none focus:bg-white" formControlName="email" >
+         <div *ngIf="submitted && bookingForm.controls['email'].errors" class="error">
+          <div *ngIf="bookingForm.controls['email'].errors['required']" class="text-danger">Your email is required</div>
+        </div>
+        
+        
+
+      </div> 
+      <div class="w-full md:w-2/4">
+      <select class="select select-bordered appearance-none w-full  border border-gray-200 text-gray-700 py-3 px-3 mb-3 rounded leading-tight focus:outline-none focus:bg-white focus:border-[rgb(204,167,114)]">
+        <option>Arrival</option>
+        <option>8AM</option>
+        <option>12Am</option>
+          </select>
+          
+        
+        
+      </div>
+
+      <div class="md:w-2/4 w-full">
+        <select
+          class=" select select-bordered appearance-none w-full  border text-gray-700 py-3 px-3 rounded leading-tight focus:outline-none focus:bg-white focus:border-[rgb(204,167,114)]"
+          id="grid-state">
+          <option>Number of rooms</option>
+          <option>1</option>
+          <option>2</option>
+        </select>
+      </div>
+    </div>
+    <div class="py-3 px-3 flex md:flex-row flex-col md:space-x-6 w-full items-left justify-between">
+      <div class="md:w-2/4  w-full">
+        <select
+          class=" select select-bordered appearance-none w-full  border text-gray-700 py-3 mb-3 px-3 rounded leading-tight focus:outline-none focus:bg-white focus:border-[rgb(204,167,114)]"
+          id="grid-state">
+          <option>Departure</option>
+          <option>8AM</option>
+          <option>12Am</option>
+        </select>
+      </div>
+      <div class="md:w-2/4 w-full">
+        <select
+          class="select select-bordered appearance-none w-full  border  text-gray-700 py-3 px-3 mb-3 rounded leading-tight focus:outline-none focus:bg-white focus:border-[rgb(204,167,114)]"
+          id="grid-state">
+          <option>Adult</option>
+          <option>Missouri</option>
+          <option>Texas</option>
+        </select>
+      </div>
+      <div class="md:w-2/4  w-full">
+        <select
+          class="select select-bordered appearance-none w-full  border border-gray-200 text-gray-700 py-3 mb-3 px-3 rounded leading-tight focus:outline-none focus:bg-white focus:border-[rgb(204,167,114)]"
+          id="grid-state">
+          <option>Child</option>
+          <option>Missouri</option>
+          <option>Texas</option>
+        </select>
+      </div>
+</div>
+<button type="submit"    class="md:w-1/4 w-11/12 mb-3 px-3 py-3 mx-3 bg-[rgb(204,167,114)] text-black-500 font-semibold hover:text-black  border border-[rgb(204,167,114)] hover:border-[rgb(204,167,114)] rounded">Check Availability</button>
+</form> 
+
+</div>
+<div class="container mx-auto mt-14">
+  <div class="flex flex-col md:flex-row justify-between">
+    <div >
+      <div class="flex flex-col  md:flex-row md:space-x-2  w-full md:1/4 md:px-2">
+        <img src="assets/img/room1.webp " class="md:w-1/2 mb-2  ">
+        <img src="assets/img/room2.webp" class="md:w-1/2 ">
+      </div>
+      <div class="mt-2 w-full">
+        <img src="assets/img/room3.webp" class="">
+      </div>
+    </div>
+    <div class="md:w-3/4 w-full  leading-normal mt-10 md:pl-12">
+      <h1 class="md:text-5xl text-2xl md:text-left font-bold md:mb-12 mb-2 p-2">Welcome<br> to our residence</h1>
+      <p class="text-gray-500 p-2 text-sm">Beginning blessed second a creepeth. Darkness wherein fish years good air whose after
+        seed appear midst evenin, appear void give third bearing divide one so blessed moved firmament gathered
+
+        Beginning blessed second a creepeth. Darkness wherein fish years good air whose after seed appear midst evenin,
+        appear void give third bearing divide one so blessed</p>
+      <button
+        class="md:mt-12 mt-2 hover:bg-white bg-[rgb(204,167,114)]  text-black-500 font-semibold hover:text-black py-2 px-6 border border-[rgb(204,167,114)] hover:border-[rgb(204,167,114)] rounded">Learn
+        More</button>
+    </div>
+  </div>
+
+  <div class="container mx-auto">
+    <div class=" md:mt-20 mt-12">
+      <img src="assets/img/download (1).webp" class="flex justify-center mx-auto">
+      <h1 class="md:text-5xl text-2xl font-bold flex justify-center md:mb-20 mb-12">Explore our Room</h1>
+    </div>
+    <div class="">
+      <div class="flex flex-col md:flex-row md:space-x-4">
+        <div class=" md:w-2/6 w-full bg-white shadow-2xl">
+          <div class="explore1"></div>
+          <div class="text-left p-4">
+            <h1 class="font-semibold text-slate-600"><span class="text-2xl">$150.00 /</span> Per Night</h1>
+            <h1 class="font-bold text-2xl leading-normal mb-4  hover:text-[rgb(204,167,114)]">Classic Bed Room</h1>
+            <p class="text-slate-600 text-sm">Beginning fourth dominion creeping god was. Beginning, which fly yieldi dry beast moved blessed</p>
+            <a href="home#form">
+              <p class="mt-4 hover:text-[rgb(204,167,114)] font-semibold">BOOK NOW <span class="">&rarr;</span></p>
+            </a>
+          </div>
+        </div>
+        <div class=" md:w-2/6 w-full  bg-white shadow-2xl ">
+          <div class="explore2"></div>
+          <div class="text-left p-4">
+            <h1 class="font-semibold text-slate-600"><span class="text-2xl">$150.00 /</span> Per Night</h1>
+            <h1 class="font-bold text-2xl leading-normal mb-4  hover:text-[rgb(204,167,114)]">Premium Room</h1>
+            <p class="text-slate-600 text-sm">Beginning fourth dominion creeping god was. Beginning, which fly yieldi dry beast moved blessed</p>
+            <a href="home#form">
+              <p class="mt-4 hover:text-[rgb(204,167,114)] font-semibold">BOOK NOW <span class="">&rarr;</span></p>
+            </a>
+          </div>
+
+        </div>
+        <div class=" md:w-2/6 w-full bg-white shadow-2xl">
+          <div class="explore3"></div>
+          <div class="text-left p-4">
+            <h1 class="font-semibold text-slate-600"><span class="text-2xl">$190.00 /</span> Per Night</h1>
+            <h1 class="font-bold text-2xl leading-normal mb-4 hover:text-[rgb(204,167,114)]">Family Room</h1>
+            <p class="text-slate-600 text-sm">Beginning fourth dominion creeping god was. Beginning, which fly yieldi dry beast moved blessed</p>
+            <a href="home#form">
+              <p class="mt-4 hover:text-[rgb(204,167,114)] font-semibold">BOOK NOW <span class="">&rarr;</span></p>
+            </a>
+          </div>
+
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+
+</div>
+
+<div>
+  <video class="w-full md:mt-20 mt-12 h-90" controls>
+    <source src="https://www.youtube.com/watch?v=n3gGxEReer8" type="video/mp4">
+    <source src="https://www.youtube.com/watch?v=n3gGxEReer8" type="video/ogg">
+    Your browser does not support the video tag.
+  </video>
+</div>
+<div class="bg-[rgb(247,249,249)]">
+  <div class="container mx-auto">
+    <div class="md:mt-20 mt-12">
+      <img src="assets/img/download (1).webp" class="flex justify-center mx-auto">
+      <h1 class="md:text-5xl text-2xl font-bold flex justify-center md:mb-20 mb-12">Special Facilities</h1>
+    </div>
+    <img src="assets/img/xspecial.webp">
+    <div class="flex flex-col md:flex-row justify-even md:space-x-4 mt-8">
+      <div class="bg-white shadow-2xl p-5 mb-2">
+        <div class="flex flex-row items-center gap-2">
+          <i class="fa fa-home"></i>
+          <h1 class="font-bold">Conference Room</h1>
+        </div>
+  
+        <p class="text-slate-600 text-sm">Built purse maids cease her ham new seven among and. Pulled coming wooded tended it answer remain</p>
+      </div>
+      <div class="bg-white shadow-2xl p-5 mb-2">
+        <div class="flex flex-row items-center gap-2">
+          <i class="fa fa-bell"></i>
+          <h1 class="font-bold">Swimming Pool</h1>
+        </div>
+  
+        <p class="text-slate-600 text-sm">Built purse maids cease her ham new seven among and. Pulled coming wooded tended it answer remain</p>
+      </div>
+      <div class="bg-white shadow-2xl p-5 mb-2">
+        <div class="flex flex-row items-center gap-2">
+          <i class="fa fa-walking"></i>
+          <h1 class="font-bold">Sport Club</h1>
+        </div>
+  
+        <p class="text-slate-600 text-sm">Built purse maids cease her ham new seven among and. Pulled coming wooded tended it answer remain</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!---carousel-->
+<div class="container mx-auto hidden">
+  <div class="md:mt-20 mt-12">
+    <img src="assets/img/download (1).webp" class="flex justify-center mx-auto">
+    <h1 class="md:text-5xl text-2xl font-semibold flex justify-center  md:mb-20 mb-12">Our Guest Love us</h1>
+  </div>
+
+  <div class="flex flex-col md:flex-row justify-even md:space-x-4 mt-8">
+    <div class="bg-white shadow-2xl p-5 mb-2" [class.anim]="animate_me">
+      <div class="md:flex block justify-between md:space-x-4">
+        <div class=" md:w-1/5 w-full mx-auto flex justify-center">
+          <img src="{{carouselArray[left]['image']}}" alt="" class="md:w-full w-2/5 ">
+        </div>
+        <div class="md:w-4/5 w-full">
+          <h1 class="text-slate-600 text-sm md:mb-2">{{carouselArray[left]["content"]}}</h1>
+          <h1 class="font-semibold ">{{carouselArray[left]["name"]}}</h1>
+          <p class="text-slate-600">{{carouselArray[left]["position"]}}</p>
+        </div>
+      </div>
+      
+    </div>
+
+    
+    <div class="bg-white shadow-2xl p-5 mb-2" [class.anim]="animate_me">
+      <div class="md:flex block justify-between md:space-x-4">
+        <div class="md:w-1/5 w-full mx-auto flex justify-center">
+          <img src="{{carouselArray[middle]['image']}}" alt="" class="md:w-full w-2/5">
+        </div>
+        <div class="md:w-4/5 w-full">
+          <h1 class="text-slate-600 text-sm md:mb-2">{{carouselArray[middle]["content"]}}</h1>
+          <h1 class="font-semibold ">{{carouselArray[middle]["name"]}}</h1>
+          <p class="text-slate-600">{{carouselArray[middle]["position"]}}</p>
+        </div>
+      </div>
+      
+    </div>
+
+    <div class="bg-white shadow-2xl p-5" [class.anim]="animate_me">
+      <div class="md:flex block justify-between md:space-x-4">
+        <div class="md:w-1/5 w-full mx-auto flex justify-center">
+          <img src="{{carouselArray[right]['image']}}" alt="" class="md:w-full w-2/5" >
+        </div>
+        <div class="md:w-4/5 w-full">
+          <h1 class="text-slate-600 text-sm md:mb-2">{{carouselArray[right]["content"]}}</h1>
+          <h1 class="font-semibold ">{{carouselArray[right]["name"]}}</h1>
+          <p class="text-slate-600">{{carouselArray[right]["position"]}}</p>
+        </div>
+      </div>
+      
+    </div>
+    
+  </div>
+</div>
+
+
+<div class="container mx-auto">
+  <div class=" md:mt-20 mt-12">
+    <img src="assets/img/download (1).webp" class="flex justify-center mx-auto">
+    <h1 class="md:text-5xl text-2xl font-bold flex justify-center md:mb-20 mb-12">Explore our Room</h1>
+  </div>
+  <div class="">
+    <div class="flex flex-col md:flex-row md:space-x-4">
+      <div class=" md:w-2/6 w-full bg-white shadow-2xl">
+        <div class="explore1"></div>
+        <div class="text-left p-4">
+          <h1 class="font-semibold  text-2xl">Hotel companies tipped the scales</h1>
+          <div class="flex flex-row justify-between p-4 text-slate-600">
+            <div class="">
+              <i class="fa fa-calendar"></i>
+              <small>20th Nov,2018</small>
+            </div>
+            <div class="">
+              <i class="fa fa-comment"></i>
+              <small>3 comments</small>
+            </div>
+
+
+          </div>
+
+          <p class="mt-4 text-slate-600 text-sm">Not thoughts all exercise blessing Indulgence way everything joy alteration boisterous the attachment party
+            we years to order</p>
+          <a href="#">
+            <p class="mt-4 hover:text-[rgb(204,167,114)] font-semibold">READ MORE <span class="">&rarr;</span></p>
+          </a>
+        </div>
+      </div>
+      <div class="md:w-2/6 w-full bg-white shadow-2xl ">
+        <div class="explore2"></div>
+        <div class="text-left p-4">
+          <h1 class="font-semibold text-2xl">Try your hand inaugural industry crossword</h1>
+          <div class="flex flex-row justify-between p-4  text-slate-600">
+            <div class="">
+              <i class="fa fa-calendar gap-2"></i>
+              <small>20th Nov,2018</small>
+            </div>
+            <div class="">
+              <i class="fa fa-comment"></i>
+              <small>3 comments</small>
+            </div>
+
+
+          </div>
+
+          <p class="mt-4 text-slate-600 text-sm">Not thoughts all exercise blessing Indulgence way everything joy alteration boisterous the attachment party
+            we years to order</p>
+          <a href="#">
+            <p class="mt-4 hover:text-[rgb(204,167,114)] font-semibold">READ MORE<span class="">&rarr;</span></p>
+          </a>
+        </div>
+
+      </div>
+      <div class=" md:w-2/6 w-full  bg-white shadow-2xl">
+        <div class="explore3"></div>
+        <div class="text-left p-4">
+          <h1 class="font-semibold text-2xl">Hoteliers resolve to invest in guests</h1>
+          <div class="flex flex-row justify-between p-4  text-slate-600">
+            <div class="">
+              <i class="fa fa-calendar gap-2"></i>
+              <small>20th Nov,2018</small>
+            </div>
+            <div class="">
+              <i class="fa fa-comment"></i>
+              <small>3 comments</small>
+            </div>
+
+
+          </div>
+
+          <p class="mt-4 text-slate-600 text-sm">Not thoughts all exercise blessing Indulgence way everything joy alteration boisterous the attachment party
+            we years to order</p>
+          <a href="#">
+            <p class="mt-4 hover:text-[rgb(204,167,114)] font-semibold">READ MORE<span class="">&rarr;</span></p>
+          </a>
+        </div>
+
+      </div>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
